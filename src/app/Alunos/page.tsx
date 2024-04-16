@@ -27,7 +27,7 @@ export default function Aluno() {
 
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <NavBar active="Aluno"/>
+      <NavBar active="alunos"/>
       
       <section className="flex flex-col gap-6 mt-6 p-6 bg-slate-900 rounded min-w-[500px]">
         <div className="flex justify-between items-center">
