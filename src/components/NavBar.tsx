@@ -12,7 +12,7 @@ export default function NavBar({active}: NavBarProps) {
         <h1 className="text-4xl font-bold">WebSchool</h1>
         <ul className="flex gap-6">
           <li className={active == "alunos" ? classActive : ""}>
-            <Link href="/alunos">Aluno</Link>
+            <Link href="/Alunos">Aluno</Link>
           </li>
           <li className={active == "matriculas" ? classActive : ""}>
             <Link href="/matriculas">Matrículas</Link>
