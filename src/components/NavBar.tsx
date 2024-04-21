@@ -5,10 +5,10 @@ interface NavBarProps {
 }
 
 export default function NavBar({active}: NavBarProps) {
-    const classActive = "border-b-4 pb-4 border-pink-600"
+    const classActive = "border-b-4 pb-4 border-black"
 
     return (
-        <nav className="flex bg-slate-900 w-full mt-0 justify-between items-center px-6 py-4">
+        <nav className="flex bg-white w-full mt-0 justify-between items-center px-6 py-4">
         <h1 className="text-4xl font-bold">WebSchool</h1>
         <ul className="flex gap-6">
           <li className={active == "alunos" ? classActive : ""}>
