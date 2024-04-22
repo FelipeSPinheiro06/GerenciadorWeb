@@ -5,7 +5,8 @@ import { Apple, ChevronDown, GraduationCap } from "lucide-react";
 interface CategoriaItemProps{
     categoria: {
         id: number,
-        nome: string
+        nome: string,
+        turma: string
     }
 }
 
