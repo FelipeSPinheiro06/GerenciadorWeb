@@ -8,7 +8,7 @@ interface ValidationMessages {
 }
 
 
-export async function create(formData: FormData) {
+export async function create(prevState: any, formData: FormData) {
 
     const data = {
         nome: formData.get("nome"),
@@ -23,7 +23,7 @@ export async function create(formData: FormData) {
         }
     }
 
-    const resp = await fetch("http://localhost:8080/alunos", config)
+    const resp = await fetch("http://localhost:8080/Aluno", config)
 
     if (resp.ok) {
         redirect("/alunos")
