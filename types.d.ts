@@ -1,0 +1,5 @@
+interface Aluno {
+    id: number,
+    nome: string,
+    turma: string
+}

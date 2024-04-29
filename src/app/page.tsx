@@ -1,4 +1,5 @@
 import NavBar from "@/components/NavBar";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   return (

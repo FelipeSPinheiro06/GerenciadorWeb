@@ -26,7 +26,7 @@ export async function create(prevState: any, formData: FormData) {
     const resp = await fetch("http://localhost:8080/Aluno", config)
 
     if (resp.ok) {
-        redirect("/alunos")
+        redirect("/Alunos")
     }
 
     if (!resp.ok) {

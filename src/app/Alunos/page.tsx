@@ -30,7 +30,7 @@ export default async function Aluno() {
           </Link>
         </div>
 
-        {alunos.map(categoria => <CategoriaItem categoria={categoria} />)}
+        {alunos.map(aluno => <CategoriaItem aluno={aluno} />)}
 
 
         

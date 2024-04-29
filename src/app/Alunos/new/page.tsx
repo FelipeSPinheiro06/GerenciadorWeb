@@ -18,7 +18,7 @@ export default function NewAlunos() {
         <main className="flex min-h-screen flex-col items-center">
             <NavBar active="alunos"/>
 
-            <form className="flex flex-col gap-4 bg-white p-6 m-6 min-w-[500px] rounded">
+            <form action={formAction} className="flex flex-col gap-4 bg-white p-6 m-6 min-w-[500px] rounded">
                 <h2 className="text-2xl font-bold text-black">Cadastrar aluno</h2>
                 <Input 
                     key="nome"

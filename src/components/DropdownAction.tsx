@@ -1,9 +1,14 @@
 'use client'
-import React from "react";
+import React, { MouseEventHandler } from "react";
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
 import { ChevronDown, Pencil, Trash } from "lucide-react";
 
-export default function DropdownAction() {
+interface DropdownActionProps {
+  onEdit: MouseEventHandler,
+  onDelete: MouseEventHandler
+}
+
+export default function DropdownAction({onEdit, onDelete}: DropdownActionProps) {
   return (
     <Dropdown>
       <DropdownTrigger>
