@@ -37,7 +37,7 @@ export function CategoriaItem({aluno}: AlunoItemProps) {
               <span>{aluno.nome}</span>
             </div>
             <DropdownAction 
-                onEdit={() => { router.push("/Aluno/" + aluno.id) }}
+                onEdit={() => { router.push("/Alunos/" + aluno.id) }}
                 onDelete={handleDelete}
             />
         </div>
