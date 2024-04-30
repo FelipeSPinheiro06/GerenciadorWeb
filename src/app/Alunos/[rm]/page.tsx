@@ -6,8 +6,8 @@ import { getById } from "@/app/actions/Alunos/get-by-id";
 
 
 export default async function EditCategorias({ params }: Params) {
-  const { id } = params
-  const aluno = await getById(id)
+  const { rm } = params
+  const aluno = await getById(rm)
  
   return (
     <main className="flex min-h-screen flex-col items-center">

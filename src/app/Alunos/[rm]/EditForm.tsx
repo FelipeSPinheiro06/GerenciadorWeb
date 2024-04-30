@@ -21,7 +21,7 @@ export function EditForm({aluno}: EditFormProps){
 
     return (
         <form action={formAction} className="flex flex-col gap-4 bg-slate-900 p-6 m-6 min-w-[500px] rounded">
-        <input type="hidden" name="id" value={aluno.id} />
+        <input type="hidden" name="rm" value={aluno.rm} />
         
         <h2 className="text-2xl font-bold">Editar Aluno {aluno.nome}</h2>
         <Input

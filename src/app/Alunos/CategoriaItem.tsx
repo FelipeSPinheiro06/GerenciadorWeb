@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 
 interface AlunoItemProps{
     aluno: {
-        id: number,
+        rm: number,
         nome: string,
         turma: string
     }
@@ -20,7 +20,7 @@ export function CategoriaItem({ aluno }: AlunoItemProps) {
 
     function handleDelete() {
         toast.promise(
-            destroy(aluno.id),
+            destroy(aluno.rm),
             {
                 loading: 'apagando...',
                 success: "apagado com sucesso",
@@ -35,10 +35,9 @@ export function CategoriaItem({ aluno }: AlunoItemProps) {
             <div className="flex gap-2 items-center">
               <GraduationCap size={40}/>
               <span>{aluno.nome}</span>
-              <span>{aluno.id}</span>
             </div>
             <DropdownAction 
-                onEdit={() => { router.push("/Alunos/" + aluno.id) }}
+                onEdit={() => { router.push("/Alunos/" + aluno.rm) }}
                 onDelete={handleDelete}
             />
         </div>

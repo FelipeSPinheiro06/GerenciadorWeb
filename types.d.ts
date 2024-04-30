@@ -1,5 +1,5 @@
 interface Aluno {
-    id: number,
+    rm: number,
     nome: string,
     turma: string
 }

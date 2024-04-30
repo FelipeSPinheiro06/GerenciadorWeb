@@ -7,7 +7,7 @@ import Link from "next/link";
 import { getAlunos } from "../actions/Alunos/get";
 
 interface Aluno {
-  id: number,
+  rm: number,
   nome: string,
   turma: string
 }
