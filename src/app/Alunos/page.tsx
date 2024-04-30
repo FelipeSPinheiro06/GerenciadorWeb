@@ -9,7 +9,7 @@ import { getAlunos } from "../actions/Alunos/get";
 interface Aluno {
   id: number,
   nome: string,
-  turma:string
+  turma: string
 }
 
 export default async function Aluno() {
