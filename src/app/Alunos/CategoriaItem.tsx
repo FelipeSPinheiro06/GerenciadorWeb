@@ -15,7 +15,7 @@ interface AlunoItemProps{
     }
 }
 
-export function CategoriaItem({aluno}: AlunoItemProps) {
+export function CategoriaItem({ aluno }: AlunoItemProps) {
     const router = useRouter()
 
     function handleDelete() {
@@ -35,6 +35,7 @@ export function CategoriaItem({aluno}: AlunoItemProps) {
             <div className="flex gap-2 items-center">
               <GraduationCap size={40}/>
               <span>{aluno.nome}</span>
+              <span>{aluno.id}</span>
             </div>
             <DropdownAction 
                 onEdit={() => { router.push("/Alunos/" + aluno.id) }}
